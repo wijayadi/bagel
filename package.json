@@ -1,0 +1,27 @@
+{
+  "name": "bagel",
+  "version": "1.0.0",
+  "description": "Fermi Pico Bagel",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wijayadi/bagel.git"
+  },
+  "keywords": [
+    "fermi",
+    "pico",
+    "bagel",
+    "bagels",
+    "number",
+    "game"
+  ],
+  "author": "Unggul Wijayadi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wijayadi/bagel/issues"
+  },
+  "homepage": "https://github.com/wijayadi/bagel#readme"
+}
