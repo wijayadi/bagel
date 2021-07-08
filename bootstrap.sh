@@ -8,7 +8,6 @@ LERNA_HASH=$(find -L './' -maxdepth 3 -type d -path './node_modules' -prune -o \
 if [ $LERNA_HASH != $OLD_LERNA_HASH ]
 then
  lerna clean -y
- # rm -rf ./node_modules
  lerna bootstrap --hoist -- --unsafe-perms --ci --prefer-offline
  echo $LERNA_HASH > ./lerna.hash
 else

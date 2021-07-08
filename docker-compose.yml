@@ -12,8 +12,8 @@ services:
       #- net.ipv4.tcp_keepalive_intvl=45
       #- net.ipv4.tcp_keepalive_probes=15
       #- net.ipv4.tcp_keepalive_time=2000000
-    label:
-      - "BUILD_ID=${ENV_VERSION}"
+    labels:
+      - "ENV_VERSION=${ENV_VERSION}"
     privileged: true
     volumes:
       - /tmp/bagel/root:/root
