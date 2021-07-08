@@ -1,0 +1,27 @@
+version: '3.7'
+services:
+  bagel_env:
+    image: bagel_env:latest
+    build:
+      context: .
+    hostname: bagel_env
+    container_name: bagel_env
+    command: /bin/bash
+#    sysctls:
+#      - kernel.unprivileged_userns_clone=1
+      #- net.ipv4.tcp_keepalive_intvl=45
+      #- net.ipv4.tcp_keepalive_probes=15
+      #- net.ipv4.tcp_keepalive_time=2000000
+    label:
+      - "BUILD_ID=${ENV_VERSION}"
+    privileged: true
+    volumes:
+      - /tmp/bagel/root:/root
+      - /tmp/bagel/jenkins:/home/jenkins
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/bin/docker:/usr/bin/docker
+      - /usr/local/bin/docker-compose:/usr/local/bin/docker-compose      
+      - ./:/home/jenkins/bagel
+    stdin_open: true
+    tty: true
+
