@@ -1,7 +1,7 @@
 {
-  "extends": "../tsconfig-build.json",
+  "extends": "../tsconfig.json",
   "compilerOptions": {
-    "types": ["node"],
+    "types": ["node", "mocha"],
     "lib": ["esnext"],
     "rootDir": "src",
     "declarationDir": "dist/types",

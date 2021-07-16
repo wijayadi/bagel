@@ -1,7 +1,3 @@
-import { BrowserPlatform } from '@aurelia/platform-browser';
-import { ConnectableSwitcher, FlushQueue } from '@aurelia/runtime';
-import { setPlatform, assert, ensureTaskQueuesEmpty } from '@aurelia/testing';
-
 interface ExtendedSuite extends Mocha.Suite {
   $duration?: number;
 }
