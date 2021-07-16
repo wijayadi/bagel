@@ -19,7 +19,7 @@ jobs:
           restore-keys: npm-
       - run: npm install -g lerna@v4.0.0 --unsafe-perm --prefer-offline --loglevel=error
       - run: ./bootstrap.sh
-      - run: lerna run build-all --stream --concurrency 1 --no-bail
+      - run: lerna run build:tsc --stream --concurrency 1 --no-bail
 
 
   # lint:
