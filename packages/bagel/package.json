@@ -48,6 +48,8 @@
     "access": "public"
   },
   "dependencies": {
+    "reflect-metadata": "^0.1.13",
+    "tsyringe": "^4.6.0"
   },
   "devDependencies": {
     "@types/node": "^14.11.5",

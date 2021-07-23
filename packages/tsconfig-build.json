@@ -7,7 +7,7 @@
     "moduleResolution": "node",
     "importHelpers": false,
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": false,
+    "emitDecoratorMetadata": true,
     "rootDir": ".",
 
     "declaration": true,

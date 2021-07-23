@@ -1,15 +1,20 @@
+/* eslint-disable import/no-unassigned-import */
+import "reflect-metadata";
 import * as assert from 'assert';
 import { SessionManager } from './session-manager';
+import { SessionArrayRepository } from '../repositories/array/session-array-repository';
 
 describe('session-manager', function () {
     it('initializes with default options', async function () {
-      const target = new SessionManager();
+      const sessions = new SessionArrayRepository();
+      const target = new SessionManager(sessions);
 
       assert.ok(target != null);
     });
 
     it('should able to create', async function () {
-      const target = new SessionManager();
+      const sessions = new SessionArrayRepository();
+      const target = new SessionManager(sessions);
 
       assert.ok(target != null);
 

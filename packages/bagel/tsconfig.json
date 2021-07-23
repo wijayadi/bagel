@@ -7,7 +7,9 @@
     "composite": true,
     "strictNullChecks": true,
     "declarationDir": "dist/types",
-    "outDir": "dist/esm"
+    "outDir": "dist/esm",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   },
   "include": ["src"]
 }
