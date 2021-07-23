@@ -42,6 +42,7 @@ export class SessionManager {
     const config = this.getConfig();
 
     const session: Session = {
+      Id: "",
       DigitCount: config.DigitCount,
       Digits: config.Digits,
       Guesses: [],

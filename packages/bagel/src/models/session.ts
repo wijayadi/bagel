@@ -1,6 +1,7 @@
 import { SessionState } from './session-state';
 import { Guess } from './guess';
-export interface Session {
+import { Entity } from './entity';
+export interface Session extends Entity<string> {
     DigitCount: number;
     Digits: string[];
 

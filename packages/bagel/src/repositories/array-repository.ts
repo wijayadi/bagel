@@ -1,14 +1,19 @@
 import { Repository } from '../lib/repository';
-
-export class ArrayRepository<K extends number | string, T> implements Repository<K, T> {
+import { Entity } from '../models/entity';
+export class ArrayRepository<K extends number | string, T extends Entity<K>> implements Repository<K, T> {
   private coll: Record<K, T>;
+
+  public constructor() {
+    // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
+    this.coll = {} as Record<K, T>;
+  }
 
   public get(id: K): T {
     return this.coll[id];
   }
 
   public create(data: T): void {
-    this.coll[data['Id'] as K] = data;
+    this.coll[data.Id] = data;
   }
 
   public update(id: K, data: T): void {
