@@ -21,6 +21,8 @@ jobs:
       - run: ./bootstrap.sh
       - run: lerna run build:tsc --stream --concurrency 1 --no-bail
       - run: lerna run test --stream --concurrency 1 --no-bail
+      - run: lerna run lint --stream --concurrency 1 --no-bail
+      - run: lerna run build --stream --concurrency 1 --no-bail
 
 
   # lint:

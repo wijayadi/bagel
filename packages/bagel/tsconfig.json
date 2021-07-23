@@ -4,6 +4,7 @@
     "types": ["node", "mocha"],
     "lib": ["esnext"],
     "rootDir": "src",
+    "composite": true,
     "declarationDir": "dist/types",
     "outDir": "dist/esm"
   },
