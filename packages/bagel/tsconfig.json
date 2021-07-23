@@ -5,6 +5,7 @@
     "lib": ["esnext"],
     "rootDir": "src",
     "composite": true,
+    "strictNullChecks": true,
     "declarationDir": "dist/types",
     "outDir": "dist/esm"
   },

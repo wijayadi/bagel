@@ -1,6 +1,6 @@
 export interface Guess {
     Number: string[];
-    Date: string[];
+    Date: Date;
     Position: number;
-    Location: number;
+    Digit: number;
 }
