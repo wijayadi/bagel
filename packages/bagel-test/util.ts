@@ -1,3 +1,4 @@
+/*
 import { IContainer } from '@aurelia/kernel';
 import { IPlatform, valueConverter } from '@aurelia/runtime-html';
 import { TestContext } from '@aurelia/testing';
@@ -65,3 +66,4 @@ export class TickLogger {
     this.cb = cb;
   }
 }
+*/

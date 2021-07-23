@@ -1,9 +1,10 @@
+/*
 import { assert } from '@aurelia/testing';
 
 export class Spy {
   public callRecords = new Map<string, any[][]>();
 
-  public getMock<T extends object>(objectToMock: T) {
+  public getMock<T extends object>(objectToMock: T): any {
     const spy = this;
     return new Proxy<T>(objectToMock, {
       get(target: T, propertyKey: string, _receiver) {
@@ -50,3 +51,4 @@ export class Spy {
     assert.deepEqual(calls[n - 1], expectedArgs);
   }
 }
+*/

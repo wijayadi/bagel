@@ -1,3 +1,4 @@
+/*
 import { noop } from '@aurelia/kernel';
 import { BrowserPlatform } from '@aurelia/platform-browser';
 import { JSDOM } from 'jsdom';
@@ -23,3 +24,4 @@ const platform = new BrowserPlatform(w, {
 $setup(platform);
 
 console.log(`Node JSDOM test context initialized`);
+*/

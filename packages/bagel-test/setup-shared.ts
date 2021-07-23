@@ -1,3 +1,4 @@
+/*
 interface ExtendedSuite extends Mocha.Suite {
   $duration?: number;
 }
@@ -100,3 +101,4 @@ export function $setup(platform: BrowserPlatform) {
     }
   }
 }
+*/
