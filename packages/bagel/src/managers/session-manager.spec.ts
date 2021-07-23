@@ -34,7 +34,8 @@ describe('session-manager', function () {
     });
 
     it('should able to guess', async function () {
-      const target = new SessionManager();
+      const sessions = new SessionArrayRepository();
+      const target = new SessionManager(sessions);
       const session = target.create();
       const actual = target.guest(session, ['1', '2', '3', '4']);
 
