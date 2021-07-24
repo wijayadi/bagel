@@ -8,7 +8,7 @@ LERNA_HASH=$(find -L './' -maxdepth 3 -type d -path './node_modules' -prune -o \
 if [ $LERNA_HASH != $OLD_LERNA_HASH ]
 then
  lerna clean -y
- lerna bootstrap --hoist -- --unsafe-perms --ci --prefer-offline
+ lerna bootstrap --hoist --nohoist=*react-native* --nohoist=expo*/* --nohoist=metro* -- --unsafe-perms --ci --prefer-offline
  echo $LERNA_HASH > ./lerna.hash
 else
  echo 'skip lerna bootstrap'
